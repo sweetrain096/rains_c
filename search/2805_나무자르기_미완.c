@@ -10,11 +10,8 @@ int binarySearch(int *data , int l , int r) {
 	int tmpResult = -1;
 	while(L<=R) {
 		int mid = (L+R)/2;
-		printf("mid%d\n" , mid);
 		for(int i = n - 1; i>0; i--) {
-			printf("%d" , data[i]);
 			if(data[i]<=mid) break;
-			printf("ok");
 			tmpSum += data[i]-mid;
 			if(tmpSum>m) {
 				tmpSum = 0;
@@ -25,6 +22,8 @@ int binarySearch(int *data , int l , int r) {
 			tmpResult = mid;
 			L = mid+1;
 		}
+		else if (tmpSum > m) R = mid - 1;
+		else L = mid + 1;
 	}
 	return tmpResult;
 }
@@ -58,7 +57,7 @@ int main(void) {
 		scanf("%d", &data[i]);
 	}
 	qSort(data , 0 , n-1);
-	printf("%d", binarySearch(data , 0 , m));
+	printf("%d", binarySearch(data , 0 , data[n-1]));
 
 	return 0;
 }
