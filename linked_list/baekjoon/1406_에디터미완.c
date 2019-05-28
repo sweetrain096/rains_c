@@ -34,13 +34,16 @@ void init() {
 
 
 int main(void) {
-	freopen("1406_input.txt" , "r" , stdin);
+	//freopen("1406_input.txt" , "r" , stdin);
 	scanf("%s" , &predata);
-	init();
+	printf("%s", predata);
+	//init();
 	scanf("%d" , &n);
+	printf("%d", n);
 	for(int i = 0; i<n; i++) {
 		scanf("%c" , &order);
-
+		printf("%c", order);
+		order = '\0';
 	}
 
 
