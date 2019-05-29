@@ -1,9 +1,49 @@
+dmih
+11
+B
+B
+P x
+L
+B
+B
+B
+P y
+D
+D
+P z
+=>yxz
+
+awffjzhmko
+20
+L
+L
+L
+L
+L
+L
+L
+L
+L
+D
+D
+P x
+P i
+D
+P c
+P f
+P o
+P f
+P q
+P e
+
+
 abcd
 3
 P x
 L
 P y
 =>abcdyx
+
 
 abc
 9
@@ -19,17 +59,3 @@ P y
 =>yxabc
 
 
-dmih
-11
-B
-B
-P x
-L
-B
-B
-B
-P y
-D
-D
-P z
-=>yxz
