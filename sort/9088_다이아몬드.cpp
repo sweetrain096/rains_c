@@ -39,6 +39,7 @@ int main(void) {
 		for (int i = 0; i < n - 1; i++) {
 			start = size[i];
 			sum = 1;
+			if (n - i < result) break;
 			for (int j = i + 1; j < n; j++) {
 				if (size[j] - start <= k) sum++;
 				else break;
